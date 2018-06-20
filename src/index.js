@@ -1,6 +1,16 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-//import registerServiceWorker from './registerServiceWorker';
+import React from "react";
+import ReactDOM from "react-dom";
+import { Provider } from "react-redux";
+import store from "./store";
+import DevTools from "./DevTools";
 
-ReactDOM.render(<h1>Project initialization</h1>, document.getElementById('root'));
-//registerServiceWorker();
+ReactDOM.render(
+  <Provider store={store}>
+    <div>
+      {" "}
+      <h1>Project init</h1>
+      <DevTools />,
+    </div>
+  </Provider>,
+  document.getElementById("root")
+);
