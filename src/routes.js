@@ -5,11 +5,15 @@ import Home from "./presentational/home.component";
 import Contact from "./presentational/contact.component";
 import NotFound from "./presentational/not-found.component";
 import CountryFlagContainer from "./containers/flag-container.component";
+import CountryDetailContainer from './containers/country-detail-container.component';
 
 export default (
   <Route path="/" component={Navigation}>
     <IndexRoute component={Home} />
-    <Route path="countries" component={CountryFlagContainer} />
+    <Route path="countries" >
+        <IndexRoute component={CountryFlagContainer} />
+        <Route path='country/:id' component={CountryDetailContainer} />
+    </Route>
     <Route path="contact" component={Contact} />
     <Route path="*" component={NotFound} />
   </Route>
