@@ -1,17 +1,15 @@
-// Task 1 ended
 import React from "react";
-import ReactDOM from "react-dom";
+import { render } from 'react-dom';
+import { Router, hashHistory } from 'react-router';
 import { Provider } from "react-redux";
 import store from "./store";
-import DevTools from "./DevTools";
+//import Navigation from './presentational/navigation.component';
+//import DevTools from "./DevTools";
 
-ReactDOM.render(
+render(
   <Provider store={store}>
-    <div>
-      {" "}
-      <h1>Project init</h1>
-      <DevTools />,
-    </div>
+    <Router history={hashHistory} routes={routes} />
+        
   </Provider>,
   document.getElementById("root")
 );
