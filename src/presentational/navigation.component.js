@@ -9,7 +9,7 @@ const Navigation = props => (
       <div className="container-fluid">
         <div className="navbar-header">
           <Link className="navbar-brand" to="/">
-            Państwa.js
+            Państwa
           </Link>
         </div>
         <div className="collapse navbar-collapse">
