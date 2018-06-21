@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router";
 import CountryFlag from "../presentational/flag.component";
-import style from '../country.css';
+import style from "../country.css";
 
 const CountryFlagList = props => (
   <div className="countries-list">
@@ -12,7 +12,7 @@ const CountryFlagList = props => (
             <CountryFlag country={country} />
           </Link>
           <button onClick={props.deleteCountry.bind(null, country.id)}>
-            DELETE
+            Delete
           </button>
         </div>
       );
