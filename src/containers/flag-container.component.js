@@ -8,7 +8,7 @@ import {
 } from "../actions/actions-countries";
 
 class CountryFlagContainer extends Component {
-  constructor() {
+  constructor(props) {
     super();
   }
 
