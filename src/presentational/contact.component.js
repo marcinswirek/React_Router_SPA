@@ -1,5 +1,5 @@
 import React from "react";
-import style from '../country.css';
+import '../country.css';
 
 const Contact = () => <h1>Street: Route 66</h1>;
 

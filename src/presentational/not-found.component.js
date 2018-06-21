@@ -1,5 +1,5 @@
 import React from "react";
-import style from '../country.css';
+import '../country.css';
 
 const NotFound = () => <h1>Error 404...Not found</h1>;
 
