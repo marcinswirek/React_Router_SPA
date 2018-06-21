@@ -47,9 +47,12 @@ const countriesReducer = function(state = initialState, action) {
         country => country.continent === action.name
       );
       return Object.assign({}, state, { visibleCountries: continentCountries });
+
+    default:
+      return initialState;
   }
 
-  return state;
+  //return state;
 };
 
 export default countriesReducer;
